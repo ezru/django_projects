@@ -1,1 +1,51 @@
+mysite/
+
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+*.venv
+
+# Django & Database files
 db.sqlite3
+*.sqlite3
+*.log
+
+# Django migrations
+**/migrations/**   # Ignore all migration files except __init__.py
+!**/migrations/__init__.py
+
+# Media and static files (if generated)
+media/
+staticfiles/
+static/
+
+# Secret settings
+.env
+*.env
+config/settings/local.py
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git / GitHub
+.git/
+.gitignore
+
+# Python package files
+*.egg-info/
+*.egg
+dist/
+build/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Docker and deployment files (optional)
+docker-compose.override.yml
